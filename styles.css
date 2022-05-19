@@ -1,0 +1,119 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+
+}
+
+/* font-family: 'Big Shoulders Display', cursive; */
+
+
+
+main{
+    
+    margin: 55px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+main div {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.div1{
+    background:hsl(31, 77%, 52%);
+    
+}
+
+.div2{
+    background:hsl(184, 100%, 22%);
+}
+
+.div3{
+    background:hsl(179, 100%, 13%);
+}
+
+main div i,h2, p , button{
+    margin-left:50px;
+    margin-right:50px;
+}
+main div i,h2, p {
+    margin-top: 40px;
+}
+
+main div button {
+    border:3px solid white;
+    background-color: rgba(255, 255, 255, 0.851);
+    margin-top:90px;
+    margin-bottom:50px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+main .div1 button{
+    color:hsl(31, 77%, 52%);
+}
+main .div2 button{
+    color:hsl(184, 100%, 22%);
+}
+main .div3 button{
+    color:hsl(179, 100%, 13%); 
+}
+
+main div button:hover{
+    cursor: pointer;
+    background: transparent;
+    color:white
+}
+
+main div h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 50px;
+    color:hsl(0, 0%, 100%);
+}
+
+main div p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:15px;
+    text-align: start;
+    line-height: 2.4;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width:952px){
+    main{
+        grid-template-columns: 1fr;
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
